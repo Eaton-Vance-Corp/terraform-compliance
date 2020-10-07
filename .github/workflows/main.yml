@@ -35,6 +35,6 @@ jobs:
         
     - name: Build Docker Image
       run: |
-       docker build . -t $REGISTRY/$GITHUB_REPOSITORY/$GITHUB_REPOSITORY:latest
-       docker push $REGISTRY/$GITHUB_REPOSITORY/$GITHUB_REPOSITORY:latest
+       docker build . -t $REGISTRY/$GITHUB_REPOSITORY/terraform-compliance:latest
+       docker push $REGISTRY/$GITHUB_REPOSITORY/terraform-compliance:latest
       
