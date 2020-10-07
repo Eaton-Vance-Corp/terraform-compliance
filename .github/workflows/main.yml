@@ -37,7 +37,7 @@ jobs:
       run: |
        docker build . -t $REGISTRY/$REPOSITORY/terraform-compliance:latest \
        --build-arg VERSION=1.3.4 \
-       --build-arg LATEST_TERRAFORM_VERSION=0.13.2
+       --build-arg LATEST_TERRAFORM_VERSION=0.13.4
        docker push $REGISTRY/$REPOSITORY/terraform-compliance:latest
       env:
         REPOSITORY: eaton-vance-corp/terraform-compliance
