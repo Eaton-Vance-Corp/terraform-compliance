@@ -38,5 +38,6 @@ jobs:
        docker build . -t $REGISTRY/$REPOSITORY/terraform-compliance:latest
        docker push $REGISTRY/$REPOSITORY/terraform-compliance:latest
       env:
-        REPOSITORY: eaton-vance-corp/terraform-compliance   
+        REPOSITORY: eaton-vance-corp/terraform-compliance
+        REGISTRY: docker.pkg.github.com     
       
